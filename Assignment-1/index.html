@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First HTML Page</title>
+    <style>
+        /* exercise 4 */
+
+        *,
+        *:after,
+        *:before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: "Broadway", serif;
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        body {
+            background: lightblue;
+            color: darkblue;
+        }
+
+        section {
+            height: 70vh;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+
+        }
+
+        section.name {
+            justify-content: space-around;
+        }
+
+        .fav {
+            justify-content: space-evenly;
+        }
+
+        ol,
+        ul {
+            text-align: left;
+        }
+
+        section.ex-3 {
+            justify-content: center;
+            flex-direction: column;
+            /* margin: 10rem 0; */
+        }
+
+        .tabs {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 10vh;
+
+        }
+
+        tr,
+        th,
+        td,
+        table {
+            border: 1px solid white;
+            text-align: left;
+        }
+
+        p,
+        li {
+            font-family: "Arial", sans-serif;
+            font-size: 30px;
+            text-align: justify;
+        }
+
+        section.ex5 {
+            display: flex;
+            padding: 5rem;
+        }
+
+        #intro {
+            border: 1px dashed green;
+            padding: 1rem 3rem;
+            height: 100%;
+            width: 100%;
+        }
+
+        .highlight {
+            background: yellow;
+            height: 100%;
+            width: 100%;
+            color: #1e1e1e;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="name">
+        <!-- exercise 1 -->
+        <div class="about">
+            <h1 class="name">Rajesh</h1>
+            <p class="hobbies">
+                My hobbies are automation and(here is a line break)<br />
+                scripting
+            </p>
+            and a horizontal line
+            <hr />
+        </div>
+    </section>
+    <section class="fav">
+        <!-- exercise 2 -->
+        <div>
+            <h3>Fav Fruits:</h3>
+            <ul>
+                <li>Banana</li>
+                <li>Orange</li>
+                <li>Potato</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Movies</h3>
+            <ol>
+                <li>Demon Dragon</li>
+                <li>RRR</li>
+                <li>Deadpool</li>
+            </ol>
+        </div>
+    </section>
+    <section class="ex-3">
+        <!-- exercise 3 -->
+        <div class="img">
+            <h3>Look at this image</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTge-TmSl7oEehWOd6MZ3yVE-Q1Z21yX-V1TA&s"
+                alt="hi" />
+        </div>
+        <div class="tabs">
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th> Age</th>
+                    <th>Favorite Subject</th>
+                </tr>
+                <tr>
+                    <td>Rajesh</td>
+                    <td>25</td>
+                    <td>maths</td>
+                </tr>
+                <tr>
+                    <td>Rajesh</td>
+                    <td>25</td>
+                    <td>maths</td>
+                </tr>
+                <tr>
+                    <td>Rajesh</td>
+                    <td>25</td>
+                    <td>maths</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="ex5">
+        <div id="intro"> This is the div of intro id from exercise 5</div>
+        <div class="highlight">This is the div of highlight class from exercise 5</div>
+    </section>
+</body>
+
+</html>
