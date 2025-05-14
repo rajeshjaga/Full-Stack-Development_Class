@@ -52,5 +52,28 @@ form{
     flex-direction: column;
 }
 label{
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+}
+button{
+    padding: 1rem 6rem;
+}
+input{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #1e1e1e;
+    padding: .3rem .5rem;
+}
+.range{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ input[type="range"] {
+    margin-top: 0px;
+    flex-grow: 2;
+    margin:0 5px;
+
 }
