@@ -26,23 +26,64 @@ h3 {
     font-size: 3rem;
 }
 
+body {
+    background-color: #1e1e1e;
+    color: #e1e1e1;
+}
+
+header {
+    text-align: center;
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main{
+main {
     height: 100vh;
     width: 100%;
     padding: 5rem 6rem;
 }
-form{
-    margin-top: 10rem;
+
+form {
+    width: 30%;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-label{ 
-    padding: 1rem 0rem .5rem .2rem;
+
+label {
+    padding: 1rem 0rem .5rem 0rem;
+}
+
+button {
+    padding: .5rem 0rem;
+    margin-top: 3rem;
+    background: #1ed221;
+    border: none;
+    border-radius: 3px;
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    border: 1px solid #e1e1e148;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: .25rem .5rem;
+}
+
+#saved {
+    flex-direction: column;
+    padding: 5rem 0rem;
+}
+
+#saved p {
+    padding-top: 1rem;
+    font-size: 1rem;
 }
